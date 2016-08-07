@@ -1,0 +1,53 @@
+[push]
+    default = simple
+
+[color]
+    ui = auto                   # turns on colours
+
+[core]
+    editor = "vim"              # makes vim your default commit editor, you can change this to any editor
+    excludesfile = ~/.gitignore # specifies a global ignore file
+    autocrlf = false            # ensure git treats line endings properly
+
+[push]
+    default = current           # pulls from the current branch by default
+
+
+# Configuration below is optional. Feel free to customize
+
+
+[alias]
+    st = status              # more concise status
+    co = checkout
+    ci = commit
+    br = checkout -b
+    df = diff
+    lg = log
+    # see a 'graph' of merges in the branch
+    graph = log --graph --pretty=oneline
+    # ignore css and minified js in diffs
+    ldf = !git diff -- $(git diff --name-only | grep -Ev \"*(min\\.js|\\.css)\")
+
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold # line info
+    old = red # deletions
+    new = green # additions
+
+[color "status"]
+    added = green
+    changed = red
+    untracked = cyan
+
+[help]
+    # Automatically correct and execute mistyped commands
+    autocorrect = 1
+
+[user]
+    email = bbeldham@unioncreative.com
+    name = Brock Beldham
