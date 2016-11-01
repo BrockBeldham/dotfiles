@@ -1,0 +1,25 @@
+{
+    "bootstrapped": true,
+    "in_process_packages":
+    [
+    ],
+    "installed_packages":
+    [
+        "AlignTab",
+        "Babel",
+        "Color Highlighter",
+        "DustBuster",
+        "Emmet",
+        "GitGutter",
+        "jQuery",
+        "LESS",
+        "Material Theme",
+        "Material Theme - Appbar",
+        "Package Control",
+        "ProjectManager",
+        "SublimeLinter",
+        "Underscorejs snippets",
+        "Whitespace",
+        "zz File Icons"
+    ]
+}
