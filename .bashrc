@@ -48,8 +48,12 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
 export PYTHONPATH=.:..:../lib
-if [ -f ~/.git-completion.sh ]; then . ~/.git-completion.sh; fi
+
+if [ -f ~/.git-completion.sh ];
+  then . ~/.git-completion.sh
+fi
 
 # set variable identifying the chroot you work in (used in the prompt below)
 if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
