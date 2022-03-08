@@ -13,5 +13,5 @@ fi
 # Load in the git branch prompt script.
 source ~/.git-prompt.sh
 
-PS1="\[\033[1;33m\]\t\[\033[0m\]-\[\033[34m\]\u\[\033[36m\]\w\[\033[32m\]\$(__git_ps1)\[\033[0m\]\n$ "
+PS1='\[\033[1;33m\]\t\[\033[0m\]-\[\033[34m\]\u\[\033[36m\]\w\[\033[32m\] #$(__git_ps1 "%s")\[\033[0m\]\n$ '
 export PS1
